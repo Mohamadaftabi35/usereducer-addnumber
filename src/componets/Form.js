@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-
+import '../css/Form.css'
 function Form() {
 
   const num = 0;
@@ -26,7 +26,7 @@ function Form() {
   const [number , setnumber] = useReducer(Addnumber , num);
   return (
     <>
-  <div className="container bg-warning mt-6">
+  <div className="container">
     <div className="row justify-content-center text-center">
       <div className="col-sm-5">
          <h1 className="display-4">کم و زیاد کردن </h1>
@@ -36,10 +36,10 @@ function Form() {
          <button onClick={() => setnumber('+ 1')} className="btn btn-outline-success">+ 1</button>
          <button onClick={() => setnumber('+ 10')} className="btn btn-outline-success">+ 10</button>
          <button onClick={() => setnumber('+ 20')} className="btn btn-outline-success active">+ 20</button></div>
-         <hr />
+         
 
           <h2>{number}</h2>
-         <hr />
+         
 
          <div className="btn-group p-2">
          <button onClick={() => setnumber('- 1')} className="btn btn-outline-danger">-1</button>
